@@ -13,6 +13,9 @@ public class GridCreate : MonoBehaviour {
 
     public Tilemap Tilemaker;
     public Tile UseTile;
+    public GameObject Selector;
+
+    Vector3 posit;
 	// Use this for initialization
 	void Start () {
         mapgrid = new int[GridMaxX, GridMaxY];
@@ -35,5 +38,12 @@ public class GridCreate : MonoBehaviour {
             }
         }
     }
-	
+    void OnMouseDown()
+    {
+        Debug.Log("Mouse Clicked");
+        posit = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        posit.z = 0;
+        Selector.transform.position=posit;
+    }
+
 }
