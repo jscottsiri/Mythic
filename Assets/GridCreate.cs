@@ -9,13 +9,13 @@ public class GridCreate : MonoBehaviour {
     int GridMaxY = 8;
 
     //Grid Create
-    int [,] mapgrid;
+    int[,] mapgrid;
 
     public Tilemap Tilemaker;
     public Tile UseTile;
 	// Use this for initialization
 	void Start () {
-
+        mapgrid = new int[GridMaxX, GridMaxY];
         for (int x = 0; x<GridMaxX; x++)
         {
             for (int y=0; y<GridMaxY; y++)
