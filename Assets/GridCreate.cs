@@ -14,7 +14,6 @@ public class GridCreate : MonoBehaviour {
     public Tilemap Tilemaker;
     public Tile UseTile;
     public GameObject Selector;
-
     Vector3 posit;
 	// Use this for initialization
 	void Start () {
@@ -26,6 +25,7 @@ public class GridCreate : MonoBehaviour {
                 mapgrid[x, y] = 0;
             }
         }
+        
         GenerateMap();
 	}
     void GenerateMap()
@@ -40,10 +40,17 @@ public class GridCreate : MonoBehaviour {
     }
     void OnMouseDown()
     {
-        Debug.Log("Mouse Clicked");
+        //get mouse position
         posit = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
+        //convert to proper placement
+        posit.x = Mathf.Floor(posit.x) + 0.5f;
+        posit.y = Mathf.Floor(posit.y) + 0.5f;
         posit.z = 0;
+
+        //move selector
         Selector.transform.position=posit;
-    }
+        Debug.Log(posit.x + ", "+posit.y);
+    } 
 
 }
