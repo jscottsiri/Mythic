@@ -381,6 +381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1340795385}
   - component: {fileID: 1340795384}
+  - component: {fileID: 1340795386}
   m_Layer: 0
   m_Name: MapManager
   m_TagString: Untagged
@@ -403,8 +404,8 @@ MonoBehaviour:
   On: {fileID: 11400000, guid: accec23bca0bd7a41b0209fdeba9bc3c, type: 2}
   tmap: {fileID: 1402714428}
   Selector: {fileID: 1254518758}
-  ison: 0
-  pos: {x: 0, y: 0, z: 0}
+  cellpos: {x: 0, y: 0, z: 0}
+  oldcellpos: {x: 0, y: 0, z: 0}
 --- !u!4 &1340795385
 Transform:
   m_ObjectHideFlags: 0
@@ -418,6 +419,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1340795386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340795383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876a4091cf109eb44aa3411479b63206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Tilemaker: {fileID: 1402714428}
+  UseTile: {fileID: 11400000, guid: 488dc6de465b9844b9f853a44b46326c, type: 2}
+  Selector: {fileID: 468810765}
 --- !u!1 &1402714424
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +445,6 @@ GameObject:
   - component: {fileID: 1402714427}
   - component: {fileID: 1402714426}
   - component: {fileID: 1402714429}
-  - component: {fileID: 1402714430}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -550,23 +564,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402714424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 876a4091cf109eb44aa3411479b63206, type: 3}
+  m_Script: {fileID: 11500000, guid: d067fb54b53bac847943c67fc3766b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tilemaker: {fileID: 1402714428}
-  UseTile: {fileID: 11400000, guid: 488dc6de465b9844b9f853a44b46326c, type: 2}
   Selector: {fileID: 1254518758}
---- !u!114 &1402714430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1402714424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fde53ecd51dc717428a7a7a4dc716714, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OccupiedTile: {fileID: 0}
-  NormalTile: {fileID: 0}
-  Selector: {fileID: 0}

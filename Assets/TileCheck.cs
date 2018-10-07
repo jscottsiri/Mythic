@@ -10,18 +10,17 @@ public class TileCheck : MonoBehaviour {
 
     public GameObject Selector;
 
-    public bool ison = false;
-
     public Vector3Int cellpos;
     public Vector3Int oldcellpos;
 
 	// Use this for initialization
-	void Start () {
-		
+	void Start() { 
+
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        revertile();
         changetile();
 	}
     void getpos()
@@ -30,13 +29,14 @@ public class TileCheck : MonoBehaviour {
     }
     void changetile()
     {
-        if (cellpos != null)
-        {
-            oldcellpos = cellpos;
-            tmap.SetTile(oldcellpos, Normal);
-        }
+        
         getpos();
         tmap.SetTile(cellpos, On);
+    }
+    void revertile()
+    {
+        oldcellpos = cellpos;
+        tmap.SetTile(oldcellpos, Normal);
     }
 
 }
