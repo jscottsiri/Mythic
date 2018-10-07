@@ -65,8 +65,7 @@
     <Compile Include="Assets\GUI\Scipts\Dialogue.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueManager.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueTrigger1.cs" />
-    <Compile Include="Assets\OnTile.cs" />
-    <Compile Include="Assets\PlayerInput.cs" />
+    <Compile Include="Assets\TileCheck.cs" />
     <Compile Include="Assets\TileStats.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/EXZOR500/Documents/GameJam/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
