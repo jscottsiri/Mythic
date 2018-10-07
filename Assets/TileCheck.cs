@@ -12,7 +12,8 @@ public class TileCheck : MonoBehaviour {
 
     public bool ison = false;
 
-    public Vector3Int pos;
+    public Vector3Int cellpos;
+    public Vector3Int oldcellpos;
 
 	// Use this for initialization
 	void Start () {
@@ -21,17 +22,21 @@ public class TileCheck : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        checkpos();
+        changetile();
 	}
-    void checkpos()
+    void getpos()
     {
-        Vector3Int cellpos = tmap.WorldToCell(Selector.transform.position);
-        string ttype= tmap.GetTile(cellpos).name;
-        if (ttype == Normal.name)
+        cellpos = tmap.WorldToCell(Selector.transform.position);
+    }
+    void changetile()
+    {
+        if (cellpos != null)
         {
-            tmap.SetTile(cellpos, On);
+            oldcellpos = cellpos;
+            tmap.SetTile(oldcellpos, Normal);
         }
-        
-        }
+        getpos();
+        tmap.SetTile(cellpos, On);
+    }
 
 }
