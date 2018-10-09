@@ -65,7 +65,7 @@
     <Compile Include="Assets\GUI\Scipts\DialogueManager.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueTrigger1.cs" />
     <Compile Include="Assets\Script\GridCreate.cs" />
-    <Compile Include="Assets\Script\PathFind.cs" />
+    <Compile Include="Assets\Script\Nodemaker.cs" />
     <Compile Include="Assets\Script\TileCheck.cs" />
     <Compile Include="Assets\Script\TileClick.cs" />
     <Compile Include="Assets\Script\TileStats.cs" />
