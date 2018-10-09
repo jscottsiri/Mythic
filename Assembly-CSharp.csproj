@@ -61,24 +61,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GridCreate.cs" />
     <Compile Include="Assets\GUI\Scipts\Dialogue.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueManager.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueTrigger1.cs" />
-    <Compile Include="Assets\TileCheck.cs" />
-    <Compile Include="Assets\TileClick.cs" />
-    <Compile Include="Assets\TileStats.cs" />
+    <Compile Include="Assets\Script\GridCreate.cs" />
+    <Compile Include="Assets\Script\PathFind.cs" />
+    <Compile Include="Assets\Script\TileCheck.cs" />
+    <Compile Include="Assets\Script\TileClick.cs" />
+    <Compile Include="Assets\Script\TileStats.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/EXZOR500/Documents/GameJam/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Supper TS/Desktop/Unity Stuff/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/EXZOR500/Documents/GameJam/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Supper TS/Desktop/Unity Stuff/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/EXZOR500/Documents/GameJam/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Supper TS/Desktop/Unity Stuff/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/EXZOR500/Documents/GameJam/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Supper TS/Desktop/Unity Stuff/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -279,10 +280,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
-      <HintPath>C:/Users/EXZOR500/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+      <HintPath>C:/Users/Supper TS/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
-      <HintPath>C:/Users/EXZOR500/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Supper TS/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
