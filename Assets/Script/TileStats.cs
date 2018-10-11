@@ -7,7 +7,7 @@ public class TileStats : MonoBehaviour {
     //States
     public bool current = false;
     public bool target = false;
-    public bool selectable = false;
+    public bool walkable = false;
 
     public int movementweight;
 
@@ -21,14 +21,14 @@ public class TileStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (target)
+		if (current)
         {
         }
         else if (target)
         {
 
         }
-        else if (selectable)
+        else if (walkable)
         {
 
         }
