@@ -11,6 +11,7 @@ public class Nodemaker : MonoBehaviour {
 
     //Map Scanning Bounds
     public int scanStartX=-100, scanEndX=100, scanStartY=-100, scanEndY= 100;
+    public int gridboundX = 0, gridboundY = 0;
 
     //Nodes that Interact
     public List<GameObject> allnodes;
@@ -34,7 +35,6 @@ public class Nodemaker : MonoBehaviour {
     void makeNodes()
     {
         //go through each spot in the scanning range and establish which tiles are tiles and which aren't
-        int mapx=0, mapy = 0;
         for (int x = scanStartX; x < scanEndX; x++)
         {
             for (int y = scanStartY; y < scanEndY; y++)
@@ -53,10 +53,25 @@ public class Nodemaker : MonoBehaviour {
             }
         }
     }
-    public List<TileBase> getBorderingTiles(int x, int y, Tilemap t)
+    public List<TileStats> getBorderingTiles(int x, int y, int width, int height)
     {
-        List<TileBase> borderList = new List<TileBase>();
-
+        List<TileStats> borderList = new List<TileStats>();
+        nodegrid = new GameObject[gridboundX+1,gridboundY+1];
+        foreach (GameObject g in allnodes)
+        {
+            //turns nodes into a list
+            TileStats wt = g.GetComponent<TileStats>();
+            Debug.Log(wt.gridX + " " + wt.gridY);
+            nodegrid[wt.gridX, wt.gridY] = g;
+        }
+        if (x > 0 && x < width -1 ) // left and right
+        {
+            if (y> 0 && y < height -1 ) // top and bottom
+            {
+               
+            }
+        }
         return borderList;
     }
+
 }

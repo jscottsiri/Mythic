@@ -8,6 +8,7 @@ public class TileStats : MonoBehaviour {
     public bool current = false;
     public bool target = false;
     public bool walkable = false;
+    public int gridX, gridY;
 
     public int movementweight;
 
