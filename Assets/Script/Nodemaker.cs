@@ -60,15 +60,48 @@ public class Nodemaker : MonoBehaviour {
         foreach (GameObject g in allnodes)
         {
             //turns nodes into a list
-            TileStats wt = g.GetComponent<TileStats>();
-            Debug.Log(wt.gridX + " " + wt.gridY);
-            nodegrid[wt.gridX, wt.gridY] = g;
+            TileStats TS = g.GetComponent<TileStats>();
+            Debug.Log(TS.gridX + " " + TS.gridY);
+            nodegrid[TS.gridX, TS.gridY] = g;
         }
         if (x > 0 && x < width -1 ) // left and right
         {
             if (y> 0 && y < height -1 ) // top and bottom
             {
-               
+                //Go through each neighboring node and add it to a borderlist
+               if (nodegrid[x+1,y]!= null)
+                {
+                    TileStats TS1 = nodegrid[x + 1, y].GetComponent<TileStats>();
+                    if (TS1 != null)
+                    {
+                        borderList.Add(TS1);
+                    }
+                }
+               if (nodegrid[x-1,y] != null)
+                {
+                    TileStats TS2 = nodegrid[x - 1, y].GetComponent<TileStats>();
+                    if (TS2 != null)
+                    {
+                        borderList.Add(TS2);
+                    }
+                }
+               if (nodegrid[x,y+1] != null)
+                {
+                    TileStats TS3 = nodegrid[x, y + 1].GetComponent<TileStats>();
+                    if (TS3 != null)
+                    {
+                        borderList.Add(TS3);
+                    }
+                }
+               if (nodegrid[x, y - 1] != null)
+                {
+                    TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                    if (TS4 != null)
+                    {
+                        borderList.Add(TS4);
+                    }
+                }
+
             }
         }
         return borderList;
