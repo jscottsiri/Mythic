@@ -101,8 +101,209 @@ public class Nodemaker : MonoBehaviour {
                         borderList.Add(TS4);
                     }
                 }
+               else if (y == 0)
+                {
+                    if (nodegrid [x +1, y] != null)
+                    {
+                        TileStats TS1 = nodegrid[x + 1, y].GetComponent<TileStats>();
+                        if (TS1 != null)
+                        {
+                            borderList.Add(TS1);
+                        }
+                    }
+                    if (nodegrid[x-1,y]!= null)
+                    {
+                        TileStats TS2 = nodegrid[x - 1, y].GetComponent<TileStats>();
+                        if (TS2 != null)
+                        {
+                            borderList.Add(TS2);
+                        }
+                    }
+                    if (nodegrid[x, y + 1] != null)
+                    {
+                        TileStats TS3 = nodegrid[x, y+1].GetComponent<TileStats>();
+                        if (TS3 != null)
+                        {
+                            borderList.Add(TS3);
+                        }
+                    }
+                    if (nodegrid[x, y -1] != null)
+                    {
+                        TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                        if (TS4 != null)
+                        {
+                            borderList.Add(TS4);
+                        }
+                    }
+                }
+               else if (y == height - 1)
+                {
+                    if (nodegrid[x, y-1] != null)
+                    {
+                        TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                        if (TS4 != null)
+                        {
+                            borderList.Add(TS4);
+                        }
+                    }
+                    if (nodegrid[x+1,y] != null)
+                    {
+                        TileStats TS1 = nodegrid[x + 1, y].GetComponent<TileStats>();
+                        if (TS1 != null)
+                        {
+                            borderList.Add(TS1);
+                        }
+                    }
+                    if (nodegrid[x-1,y] != null)
+                    {
+                        TileStats TS2 = nodegrid[x - 1,y].GetComponent<TileStats>();
+                        if (TS2 != null)
+                        {
+                            borderList.Add(TS2);
+                        }
+                    }
+                }
 
             }
+            else if (x == 0)
+            {
+                if (y>0 && y< height - 1)
+                {
+                    if (nodegrid[x+1,y]!= null)
+                    {
+                        TileStats TS1 = nodegrid[x + 1, y].GetComponent<TileStats>();
+                        if (TS1 != null)
+                        {
+                            borderList.Add(TS1);
+                        }
+                    }
+                    if (nodegrid[x,y-1] != null)
+                    {
+                        TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                        if (TS4 != null)
+                        {
+                            borderList.Add(TS4);
+                        }
+                    }
+                    if (nodegrid[x,y+1] != null)
+                    {
+                        TileStats TS3 = nodegrid[x, y + 1].GetComponent<TileStats>();
+                        if (TS3 != null)
+                        {
+                            borderList.Add(TS3);
+                        }
+                    }
+                }
+                else if (y == 0)
+                {
+                    if (nodegrid[x+1,y]!= null)
+                    {
+                        TileStats TS1 = nodegrid[x + 1, y].GetComponent<TileStats>();
+                        if (TS1 != null)
+                        {
+                            borderList.Add(TS1);
+                        }
+                    }
+                    if (nodegrid[x,y+1] != null)
+                    {
+                        TileStats TS3 = nodegrid[x, y = 1].GetComponent<TileStats>();
+                        if (TS3 != null)
+                        {
+                            borderList.Add(TS3);
+                        }
+                    }
+
+                }
+                else if (y== height - 1)
+                {
+                    if (nodegrid[x+1,y]!= null)
+                    {
+                        TileStats TS1 = nodegrid[x + 1, y].GetComponent<TileStats>();
+                        if (TS1 != null)
+                        {
+                            borderList.Add(TS1);
+                        }
+                    }
+                    if (nodegrid[x, y - 1] != null)
+                    {
+                        TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                        if (TS4 != null)
+                        {
+                            borderList.Add(TS4);
+                        }
+                    }
+
+                }
+            }
+            else if (x == width - 1)
+            {
+                if (y>0 && y <height - 1)
+                {
+                    if (nodegrid[x - 1, y] != null)
+                    {
+                        TileStats TS2 = nodegrid[x - 1, y].GetComponent<TileStats>();
+                        if (TS2 != null)
+                        {
+                            borderList.Add(TS2);
+                        }
+                    }
+                    if (nodegrid[x,y+1]!= null)
+                    {
+                        TileStats TS3 = nodegrid[x, y + 1].GetComponent<TileStats>();
+                        if (TS3 != null)
+                        {
+                            borderList.Add(TS3);
+                        }
+                    }
+                    if (nodegrid [x,y-1] != null){
+                        TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                        if (TS4 != null)
+                        {
+                            borderList.Add(TS4);
+                        }
+                    }
+
+                }
+                else if (y == 0)
+                {
+                    if (nodegrid [x-1,y] != null)
+                    {
+                        TileStats TS2 = nodegrid[x - 1,y].GetComponent<TileStats>();
+                        if (TS2 != null)
+                        {
+                            borderList.Add(TS2);
+                        }
+                    }
+                    if (nodegrid[x,y+1] != null)
+                    {
+                        TileStats TS3 = nodegrid[x, y + 1].GetComponent<TileStats>();
+                        if (TS3 != null)
+                        {
+                            borderList.Add(TS3);
+                        }
+                    }
+                }
+                else if (y == height - 1)
+                {
+                    if (nodegrid[x - 1, y] != null)
+                    {
+                        TileStats TS2 = nodegrid[x - 1, y].GetComponent<TileStats>();
+                        if (TS2 != null)
+                        {
+                            borderList.Add(TS2);
+                        }
+                    }
+                    if (nodegrid[x,y-1]!= null)
+                    {
+                        TileStats TS4 = nodegrid[x, y - 1].GetComponent<TileStats>();
+                        if (TS4 != null)
+                        {
+                            borderList.Add(TS4);
+                        }
+                    }
+                }
+            }
+
         }
         return borderList;
     }
