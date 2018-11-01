@@ -549,13 +549,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3497396797e131f4fb1566f9c8a556fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thegrid: {fileID: 386900765}
+  thegrid: {fileID: 0}
   tmap: {fileID: 1402714428}
   Nodefab: {fileID: 1322949695949780, guid: 9f80ab728f8d56b4ca510ecea364bb8f, type: 2}
   scanStartX: -100
   scanEndX: 100
   scanStartY: -100
   scanEndY: 100
+  gridboundX: 0
+  gridboundY: 0
+  gridendX: 7
+  gridendY: 7
   allnodes: []
 --- !u!1 &1402714424
 GameObject:

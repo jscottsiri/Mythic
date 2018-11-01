@@ -64,11 +64,18 @@
     <Compile Include="Assets\GUI\Scipts\Dialogue.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueManager.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueTrigger1.cs" />
-    <Compile Include="Assets\Script\GridCreate.cs" />
-    <Compile Include="Assets\Script\Nodemaker.cs" />
-    <Compile Include="Assets\Script\TileCheck.cs" />
-    <Compile Include="Assets\Script\TileClick.cs" />
-    <Compile Include="Assets\Script\TileStats.cs" />
+    <Compile Include="Assets\Script\Character Stats\CharStats.cs" />
+    <Compile Include="Assets\Script\CurrentScripts\Griddef.cs" />
+    <Compile Include="Assets\Script\CurrentScripts\Node.cs" />
+    <Compile Include="Assets\Script\CurrentScripts\Pathfinding.cs" />
+    <Compile Include="Assets\Script\CurrentScripts\Point.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\Grid.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\GridCreate.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\Nodemaker.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\PathFinding.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\TileCheck.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\TileClick.cs" />
+    <Compile Include="Assets\Script\Testing Scripts\TileStats.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Supper TS/Desktop/Unity Stuff/Mythic Of Heroes and Monsters/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

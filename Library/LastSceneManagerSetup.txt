@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/TileMaker.unity
+- path: Assets/CombatMap.unity
   isLoaded: 1
   isActive: 1
