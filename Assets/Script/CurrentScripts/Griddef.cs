@@ -13,7 +13,7 @@ using System.Collections.Generic;
         *               0.0f = unwalkable tile.
         *               1.0f = normal tile.
         */
-        public void Grid(int width, int height, float[,] tiles_costs)
+        public void Grid(int width, int height, float[,] tiles_costs, bool walk)
         {
             gridSizeX = width;
             gridSizeY = height;
@@ -23,7 +23,7 @@ using System.Collections.Generic;
             {
                 for (int y = 0; y < height; y++)
                 {
-                    nodes[x, y] = new Node(tiles_costs[x, y], x, y);
+                    nodes[x, y] = new Node(tiles_costs[x, y], x, y, walk);
 
                 }
             }
