@@ -46,11 +46,9 @@ public class Nodemaker : MonoBehaviour {
                 {
                     GameObject node = (GameObject)Instantiate(Nodefab, new Vector3(x + 0.5f + tmap.transform.position.x, y + 0.5f +
                         tmap.transform.position.y, 0), Quaternion.Euler(0, 0, 0));
-                    node.AddComponent(typeof(TileStats));
-                    TileStats nodestats = node.GetComponent<TileStats>();
-                    nodestats.gridX = x;
-                    nodestats.gridY = y;
-                    nodestats.movementweight = 1;
+                    Node Describe = new Node(1.0f, x, y);
+                    //node.AddComponent<Node(1.0f, x, y)>;
+
                     allnodes.Add(node);
 
                     node.name = "Node " + x.ToString() + " : " + y.ToString();

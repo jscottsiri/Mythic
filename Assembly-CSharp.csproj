@@ -64,15 +64,14 @@
     <Compile Include="Assets\GUI\Scipts\Dialogue.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueManager.cs" />
     <Compile Include="Assets\GUI\Scipts\DialogueTrigger1.cs" />
+    <Compile Include="Assets\Script\3D Scripts\TileMap.cs" />
     <Compile Include="Assets\Script\Character Stats\CharStats.cs" />
     <Compile Include="Assets\Script\CurrentScripts\Griddef.cs" />
     <Compile Include="Assets\Script\CurrentScripts\Node.cs" />
     <Compile Include="Assets\Script\CurrentScripts\Pathfinding.cs" />
     <Compile Include="Assets\Script\CurrentScripts\Point.cs" />
-    <Compile Include="Assets\Script\CurrentScripts\TileScripts\arraybuild.cs" />
     <Compile Include="Assets\Script\CurrentScripts\TileScripts\Ground.cs" />
     <Compile Include="Assets\Script\CurrentScripts\TileScripts\MapDef.cs" />
-    <Compile Include="Assets\Script\CurrentScripts\TileScripts\memberFunctions.cs" />
     <Compile Include="Assets\Script\CurrentScripts\TileScripts\Wall.cs" />
     <Compile Include="Assets\Script\CurrentScripts\TileScripts\WallDef.cs" />
     <Compile Include="Assets\Script\Testing Scripts\Grid.cs" />

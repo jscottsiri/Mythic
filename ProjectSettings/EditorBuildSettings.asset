@@ -4,4 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TileMaker.unity
+    guid: ff89988d4a293d143b2419d1de0647ec
+  m_configObjects: {}
